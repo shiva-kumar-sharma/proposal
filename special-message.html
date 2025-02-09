@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff758c, #dd6395);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            background: rgba(255, 255, 255, 0);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            animation: fadeIn 3s ease-in-out;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/my-image-1.jpg') no-repeat center center;
+            background-size: 100% 100%;
+            opacity: 0.3;
+            z-index: -1;
+            border-radius: 15px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 28px;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            animation: fadeInText 3s ease-in-out;
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .heart {
+            color: red;
+            font-size: 30px;
+            display: inline-block;
+            transform-origin: center;
+            animation: heartbeat 1.5s infinite ease-in-out;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            25% {
+                transform: scale(1.2);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            75% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>For My Love <span class="heart">❤️</span></h1>
+        <p>I’ve always known that life might take us in different directions, and I respect the choices you need to
+            make, even if it hurts me deeply. The truth is, I’ll never stop loving you no matter what happens. You are
+            not just the love of my life, but also the best person I’ve ever known. My greatest friend, my safe place,
+            my heart.</p>
+        <p>When the time comes for you to walk a different path, I’ll be broken, and I might either drift away or lock
+            myself away. But you have to keep me with you. You’ll have to rebuild me, piece by piece, and keep me
+            together because without you, I don’t know if I’ll ever feel whole again.</p>
+        <p>Even if I can’t have you the way I wish, I’ll always be here for you, because in this messed up world I’ve
+            been lucky enough to find not just love, but the best friend I could ever ask for. And no matter what, that
+            will never change.</p>
+        <h2>I love you, sweetheart. <span class="heart">❤️</span></h2>
+    </div>
+    <script src="validate-login.js"></script>
+</body>
+
+</html>
