@@ -7,3 +7,7 @@ if (!sessionStorage.getItem('username')) {
         window.location.href = 'index.html';
     }
 }
+
+document.addEventListener('contextmenu', function (event) {
+    event.preventDefault(); // Disable right-click
+});
